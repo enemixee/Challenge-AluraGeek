@@ -1,0 +1,323 @@
+:root {
+    --color1: #5300C8;
+    --color2: #03318C;
+    --color3: #ffffff;
+    --color4: #000000;
+    
+
+}
+
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+/* Header */
+
+header {
+    height: 96px;
+    background: var(--color1);
+    box-shadow: 0px 6px #bfbfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedor__header{
+    height: 50px;
+    padding-right: 3vw;
+    width: auto;
+ 
+    display: flex;
+    align-items: center;
+  
+}
+
+.texto__header {
+    color: var(--color3);
+}
+
+.contenedor__header img {
+    width: 200px;
+    height: auto;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    height: 1235px;
+    display: flex;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.titulo {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.msg {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#seccion__productos {
+    padding: 40px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: start;   
+}
+
+.pared-prouctos {
+    width: 678px;
+    height: 971px;
+    padding: 15px;
+    box-shadow: -12px 10px 5px rgba(0,0,0, 0.35);
+    display: flex;
+    overflow-y: scroll;
+}
+
+.lista-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: start;
+    gap: 14px;
+}
+
+.producto {
+    width: 178px;
+    height: 258px;
+    display: flex;
+    flex-direction: column;
+    background: var(--color1);
+    box-shadow: -5px 6px 3px rgba(0,0,0, 0.25);
+    border-radius: 10px;
+    border: 3px solid #000000;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+.img-producto {
+    width: 176px;
+    height: 174px;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+.descripcion-producto {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    color: var(--color3);
+    font-size: 16px;
+    padding: 15px 0;
+}
+
+.producto > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precio-producto {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    color: var(--color3);
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.icono-eliminar {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#seccion__agregar__productos {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-agregar-producto {
+    width: 472px;
+    height: 517px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.campo-form {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-form > input {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    width: 372px;
+    height: 58px;
+    border: 4px solid var(--color2);
+    border-radius: 50px;
+    padding-left: 15px;
+}
+
+.campo-form > input::placeholder {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+.mensaje-error {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    color: #ff0000;
+    padding-top: 16px;
+}
+
+.form-agregar-producto > div {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-enviar {
+    width: 188px;
+    height: 55px;
+    border-radius: 15px;
+    background: var(--color2);
+    color: var(--color3);
+    cursor: pointer;
+}
+
+#btn-limpiar {
+    width: 188px;
+    height: 55px;
+    border-radius: 15px;
+    border: 4px solid var(--color2); 
+    background: var(--color3);
+    color: var(--color2);
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 232px;
+    background: var(--color1);
+    box-shadow: 0px -10px 5px #bfbfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer img {
+    width: 374px;
+    height: 56px;
+}
+
+.footer__line1 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color3);
+    margin-bottom: 10px;
+}
+
+.footer__line2 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--color3);
+}
+
+
+@media (max-width: 767px)  {
+
+    /* header */
+
+    header img {
+        width: 65%;
+    }
+
+    /*  main */
+
+    main {
+        height: auto;
+        width: 100vw;
+    }
+
+    .titulo {
+        font-size: 18px;
+    }
+
+    .contenedor {        
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .form-agregar-producto {
+        padding: 0;
+    }
+
+    .campo-form > input {
+        width: 290px;
+    }
+
+    .form-agregar-producto > div {
+        justify-content: space-around;
+    }
+
+    #btn-enviar, #btn-limpiar  {
+        width: 150px;
+    }
+
+    #seccion__productos {
+        padding: 0;
+    }
+
+    .pared-prouctos {
+        width: auto;
+        height: auto;
+        overflow: scroll;
+        padding: 0 10px 0 21px;
+    }
+
+    .producto {
+        width: 40%;
+    }
+
+    .img-producto {
+        width: 98%;
+        height: 174px;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 2px solid #000000;
+    }
+}
